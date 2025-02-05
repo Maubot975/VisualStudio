@@ -1,0 +1,16 @@
+Private Sub cmdAggiungi_Click()
+'Aggiunge un nuovo gusto di caffè all'evento
+
+if cmbCaffe.text <> " " Then
+   With cboCaffe
+        .AddItem .Text
+        .Text = " "
+   End With
+else
+   MsgBox "Immettere un nome di caffè da aggiungere", vbExclamation, "Dati mancanti"
+End If
+  cmbCaffe.setFocus
+End Sub
+
+
+
